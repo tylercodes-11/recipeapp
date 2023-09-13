@@ -47,29 +47,40 @@ const createMeal = (meal) => {
 
     // For the properties not available, returned empty string using Ternary Operator
 
-	const newHTML = `
+	const newHTML = 
+    `
     <div class="container">
-    <h2>${meal.strMeal}</h2>
-    <img src="${meal.strMealThumb}" alt="Meal Image">
-    
-    <ul>
-    ${ingredients.map(ingredient => `<li>${ingredient}</li>`).join("")}
-    </ul>
-   
-    <p>
-    ${meal.strInstructions}
-    </p>
-    <h2>Video Tutorial:</h2>
-    ${
+    <div class="mealHeader ">
+     <h2 class=" mealName text-capitalize ">${meal.strMeal}</h2>
+     ${
         meal.strYoutube
             ? `
-            <iframe width="420" height="315"
+            <iframe width="650" height="615"
             src="https://www.youtube.com/embed/${meal.strYoutube.slice(-11)}">
+            </iframe>
             `
-            : ''
-    }
+            : `<img class="col mealImage" src="${meal.strMealThumb}" alt="Meal Image" />`
+        }
+        </div>
+    
+        <div>
+        <div class="ingredients">
+         <h2>Ingredients </h2>
+         <ul >
+         ${ingredients.map(ingredient => `<li class="ingredient">${ingredient}</li>`).join("")}
+          </ul>
+          </div>
+   
+     
+    <h2>Recipe Instructions</h2>
+    <p class="mealInstructions">
+    ${meal.strInstructions}
+    </p>
+      </div>  
+    </div>
     </div>
     `
     
     mealDiv.innerHTML = newHTML;
 };
+{/* <img class="col mealImage" src="${meal.strMealThumb}" alt="Meal Image"> */}
