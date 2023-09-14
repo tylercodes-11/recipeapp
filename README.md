@@ -1,6 +1,6 @@
 # Recipe API App
 
-Welcome to the Recipe API App! With this application, you can search for a wide variety of recipes using an external recipe API. If you're looking for some cooking inspiration, this app has you covered.
+Welcome to the Recipe API App! With this application, you can shuffle through a wide variety of recipes using an external recipe API. Great when you just can't decide what you want to cook! If you're looking for some cooking inspiration, this app has you covered.
 
 ## How to Use
 
@@ -9,7 +9,7 @@ Welcome to the Recipe API App! With this application, you can search for a wide 
 
 ### Searching for Recipes
 
-1. Click Get a New Recipe to cycle through new recipe.
+1. Click Shuffle Recipe to cycle through to a brand new recipe.
 2. Read the instructions or watch the video for a walkthough to cooking this dish.
 
 ### Viewing Recipe Details
